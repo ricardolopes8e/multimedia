@@ -1,95 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+    <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ asset('css/bulma.css') }}">
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
+
+        <div class="hero is-light is-bold is-fullheight">
+            <div class="hero-head">
+                <header class="nav">
+                    @if (Route::has('login'))
+                        <div class="nav-right">
+                            @if (Auth::check())
+                                <a href="{{ url('/home') }}" class="nav-item is-tab">Home</a>
+                            @else
+                                <a href="{{ url('/login') }}" class="nav-item is-tab">Login</a>
+                                <a href="{{ url('/register') }}" class="nav-item is-tab">Register</a>
+                            @endif
+                        </div>
                     @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                </header>
             </div>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-1">Laravel</h1>
+                    <div class="columns">
+                        <div class="column is-half is-offset-one-quarter">
+                            <div class="level subtitle is-5">
+                                <a href="https://laravel.com/docs" class="level-item">Documentation</a>
+                                <a href="https://laracasts.com" class="level-item">Laracasts</a>
+                                <a href="https://laravel-news.com" class="level-item">News</a>
+                                <a href="https://forge.laravel.com" class="level-item">Forge</a>
+                                <a href="https://github.com/laravel/laravel" class="level-item">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </div>
     </body>
-</html>
+    </html>
