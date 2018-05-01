@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/bulma.css') }}">
-    
+
     <!-- Fonts -->
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
 
@@ -52,7 +52,7 @@
                 </header>
             </div>
         </div>
-        
+
         <div class="section">
             @yield('content')
         </div>

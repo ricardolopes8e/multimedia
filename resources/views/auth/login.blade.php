@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+    <section class="hero is-light is-fullheight">
+        <div class="hero-body" style="  flex-grow: 0;">
+        </div>>
+    </section>
 <div class="container">
     <div class="columns">
         <div class="column is-4 is-offset-4">
