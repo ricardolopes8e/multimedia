@@ -105,7 +105,7 @@
 
                     <!-- post header -->
                     <div class="card-content-header">
-                        <h4 class="title is-4"><a href="post.html">Portuguese teams is the rise</a></h4>
+                        <h4 class="title is-4"><a href="post.html">Portuguese e-sports players</a></h4>
                     </div>
                     <!-- end of post header -->
 
