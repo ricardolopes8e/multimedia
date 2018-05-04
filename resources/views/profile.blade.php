@@ -1,243 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title> Profile </title>
+  <title>Bulma Blog Dark 1</title>
+  <!-- stylesheets -->
   <link href="{{ asset('css/bulma.css') }}" rel="stylesheet">
   <link href="{{ asset('css/bulmacustom.css') }}" rel="stylesheet">
   <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link href="'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.cs" rel="stylesheet">
+
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-  </style>
 </head>
 <body>
-
-
-
-  <section class="hero is-fullheight is-default is-bold">
-  <div class="hero-head">
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="../">
-            <img src="../images/bulma.png" alt="Logo">
-          </a>
-          <span class="navbar-burger burger" data-target="navbarMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navbarMenu" class="navbar-menu">
- <div class="navbar-end"><div class="tabs is-right">
-  <ul>
-    <li class="is-active"><a>Home</a></li>
-    <li><a href="">Examples</a></li>
-    <li><a href="">Features</a></li>
-    <li><a href="">Team</a></li>
-    <li><a href="">Help</a></li>
-  </ul>
-</div>
-          </div>
-        </div>
+<!-- navigation -->
+<div class="navigation">
+  <nav class="nav has-shadow">
+    <div class="container">
+      <!-- nav site title -->
+      <div class="nav-left">
+        <a class="nav-item">
+          <h3 class="title is-3" style="color: white;">E-STUFF</h3>
+        </a>
       </div>
-    </nav>
-  </div>
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+      <!-- end of site title -->
 
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-<div class="container">
-<div class="row">
-  <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
-     <div class="well profile">
-          <div class="col-sm-12">
-              <div class="col-xs-12 col-sm-8">
-                  <h2>Ja Kim</h2>
-                  <p><strong>Organization: </strong> Grow UP </p>
-                  <p><strong>Team: </strong> UP Pro HS </p>
-                  <p><strong>Games: </strong>
-                      <span class="tags">Hearthstone</span>
-                      <span class="tags">Counter Strike</span>
-                      <span class="tags">Fortnite</span>
-                      <span class="tags">Sea of Thieves</span>
-                  </p>
-              </div>
-              <div class="col-xs-12 col-sm-4 text-center">
-                  <figure>
-                      <img src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png" alt="" class="img-circle img-responsive">
-                      <figcaption class="ratings">
-                          <p>Ratings
-                          <a href="#">
-                              <span class="fa fa-star"></span>
-                          </a>
-                          <a href="#">
-                              <span class="fa fa-star"></span>
-                          </a>
-                          <a href="#">
-                              <span class="fa fa-star"></span>
-                          </a>
-                          <a href="#">
-                              <span class="fa fa-star"></span>
-                          </a>
-                          <a href="#">
-                               <span class="fa fa-star-o"></span>
-                          </a>
-                          </p>
-                      </figcaption>
-                  </figure>
-              </div>
-              <div id="imagediv" class="col-xs-12 col-sm-3">
-                  <img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp">
-              </div>
+      <!-- this "nav-toggle" hamburger menu is only visible on mobile -->
+      <span class="nav-toggle">
+	    <span></span>
+	    <span></span>
+	    <span></span>
+	  </span>
+      <!-- end of toggle -->
 
-          </div>
-          <div class="col-xs-12 divider text-center">
-              <div class="col-xs-12 col-sm-4 emphasis">
-                  <h2><strong> 20,7K </strong></h2>
-                  <p><small>Followers</small></p>
-                  <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow </button>
-              </div>
-              <div class="col-xs-12 col-sm-4 emphasis">
-                  <h2><strong>245</strong></h2>
-                  <p><small>Following</small></p>
-                  <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile </button>
-              </div>
-              <div class="col-xs-12 col-sm-4 emphasis">
-                  <h2><strong>43</strong></h2>
-                  <p><small>Snippets</small></p>
-                  <div class="btn-group dropup btn-block">
-                    <button type="button" class="btn btn-primary"><span class="fa fa-gear"></span> Options </button>
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                      <span class="caret"></span>
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu text-left" role="menu">
-                      <li><a href="#"><span class="fa fa-envelope pull-right"></span> Send an email </a></li>
-                      <li><a href="#"><span class="fa fa-list pull-right"></span> Add or remove from a list  </a></li>
-                      <li class="divider"></li>
-                      <li><a href="#"><span class="fa fa-warning pull-right"></span>Report this user for spam</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#" class="btn disabled" role="button"> Unfollow </a></li>
-                    </ul>
-                  </div>
-              </div>
-          </div>
-     </div>
-  </div>
-</div>
-</div>
-
-    <div class="hero-foot">
-      <div class="container">
-        <div class="tabs is-centered">
-          <ul>
-            <li><a></li>
-          </ul>
-        </div>
+      <!-- this "nav-menu" is hidden on mobile -->
+      <div class="nav-right nav-menu">
+        <a class="nav-item is-tab is-active" href="index.html">
+          Home
+        </a>
+        <a class="nav-item is-tab" href="post.html">
+          Teams
+        </a>
+        <a class="nav-item is-tab" href="about.html">
+          Players
+        </a>
+        <a class="nav-item is-tab" href="contact.html">
+          Competitions
+        </a>
+        <a class="nav-item">
+	      <span class="icon">
+		<i class="fa fa-search"></i>
+	      </span>
+        </a>
       </div>
+      <!-- end of nav -->
     </div>
-  </section>
-  <script async type="text/javascript" src="../js/bulma.js"></script>
+  </nav>
+</div>
+<!-- end navigation -->
+<!-- page content -->
+<div class="main-content">
+  <div class="container">
+    <!-- start of posts -->
+    <div class="columns is-multiline is-centered">
+      <!-- start of post -->
+      <div class="column is-9" style="background-color: #161C1C">
+        <!-- post content -->
+        <div class="card-content">
+          <div class="content">
+            <div class="card-inner-wrapper">
+
+
+              <!-- post text -->
+              <div class="card-content-text">
+                <div class="columns is-multiple is-narrow is-two-thirds">
+
+
+                  <div class="column is-7">
+
+
+                    <i class="fa fa-user-circle" style="font-size:24px; color: #f39c12"> <label
+                              class="" style="display:inline; color: #f5fffd;"> Antonio
+                        Lopes </label> </i>
+
+
+                    <ul style=" list-style-type: none;">
+
+
+                      <li>
+                        <label class="is-bold"
+                               style="width: 105px; font-size:16px;  color: #f39c12; ">
+                          Organização : </label>
+                        <label class=""
+                               style="display:inline; font-size:16px;  color: #f5fffd;"> FOR THE
+                          WIN </label>
+                      </li>
+
+                      <li>
+                        <label class="is-bold"
+                               style="width: 105px; font-size:16px;  color: #f39c12; "> Equipa
+                          : </label>
+                        <label class="" style="display:inline; font-size:16px; color: #f5fffd;">
+                          FTW Hs Pro</label>
+                      </li>
+
+                      <li>
+                        <label class="is-bold"
+                               style="width: 105px; font-size:16px;  color: #f39c12; ">
+                          Modalidades </label>
+
+                        <ul style=" list-style-type: none;">
+
+
+                          <li><label class="is-bold"
+                                     style="width: 105px; font-size:12px;  color: #f5fffd; font-weight: bold; ">
+                              Hearthstone</label></li>
+                          <li><label class="is-bold"
+                                     style="width: 105px; font-size:12px;  color: #f5fffd; font-weight: bold; ">
+                              Counter Strike </label></li>
+                          <li><label class="is-bold"
+                                     style="width: 105px; font-size:12px;  color: #f5fffd; font-weight: bold; ">
+                              Fortnite </label></li>
+                          <li><label class="is-bold"
+                                     style="width: 105px; font-size:12px;  color: #f5fffd; font-weight: bold; ">
+                              Sea of Thieves </label></li>
+
+                        </ul>
+
+
+                      </li>
+
+
+                    </ul>
+
+
+                  </div>
+                  <div class="column is-5">
+                    <figure>
+                      <figcaption class="ratings">
+                        <p>Ratings
+                          <a href="#">
+                            <span class="fa fa-star" style="color: #f39c12"></span>
+                          </a>
+                          <a href="#">
+                            <span class="fa fa-star" style="color: #f39c12"></span>
+                          </a>
+                          <a href="#">
+                            <span class="fa fa-star" style="color: #f39c12"></span>
+                          </a>
+                          <a href="#">
+                            <span class="fa fa-star" style="color: #f39c12"></span>
+                          </a>
+                          <a href="#">
+                            <span class="fa fa-star-o" style="color: #f39c12"></span>
+                          </a>
+                        </p>
+                      </figcaption>
+                    </figure>
+
+                    <div class="card-image">
+                      <figure class="image is-large">
+                        <img src="{{ asset('img/player.jpeg') }}" alt="img">
+                      </figure>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+
+
+              </div>
+            </div>
+            <!-- end of post text -->
+
+
+            <!-- post footer -->
+            <div class="card-content-footer-small">
+
+              <!-- post footer nav -->
+              <div class="columns">
+                <div class="column has-text-left">
+                  <a class="button is-small is-button-grey" href="index.html">Back to Home</a>
+                </div>
+                <div class="column has-text-right">
+                  <i class="fa fa-calendar">
+                    <small>11:09 PM - 1 Jan 2016</small>
+                  </i>
+                </div>
+              </div>
+              <!-- end of post footer nav -->
+            </div>
+            <!-- end of post footer -->
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+</div>
+<!-- end of page content -->
+
+<!-- footer: will stick to the bottom -->
+<div class="footer footer-top-shadow">
+  <div class="container has-text-centered">
+	<span class="icon">
+	  <i class="fa fa-gamepad"></i>
+	</span>
+
+  </div>
+</div>
+<!-- end of footer -->
 </body>
 </html>
-
-<style>
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-body
-{
-    font-family: 'Lato', 'sans-serif';
-    }
-.profile
-{
-    min-height: 355px;
-    display: inline-block;
-    }
-figcaption.ratings
-{
-    margin-top:20px;
-    }
-figcaption.ratings a
-{
-    color:#f1c40f;
-    font-size:11px;
-    }
-figcaption.ratings a:hover
-{
-    color:#f39c12;
-    text-decoration:none;
-    }
-.divider
-{
-    border-top:1px solid rgba(0,0,0,0.1);
-    }
-.emphasis
-{
-    border-top: 4px solid transparent;
-    }
-.emphasis:hover
-{
-    border-top: 4px solid #1abc9c;
-    }
-.emphasis h2
-{
-    margin-bottom:0;
-    }
-span.tags
-{
-    background: #1abc9c;
-    border-radius: 2px;
-    color: #f5f5f5;
-    font-weight: bold;
-    padding: 2px 4px;
-    }
-.dropdown-menu
-{
-    background-color: #34495e;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    width: 250px;
-    margin-left: -125px;
-    left: 50%;
-    }
-.dropdown-menu .divider
-{
-    background:none;
-    }
-.dropdown-menu>li>a
-{
-    color:#f5f5f5;
-    }
-.dropup .dropdown-menu
-{
-    margin-bottom:10px;
-    }
-.dropup .dropdown-menu:before
-{
-    content: "";
-    border-top: 10px solid #34495e;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    margin-left: -10px;
-    z-index: 10;
-    }
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-#imagediv {
-    min-height: 120px;
-    max-height: auto;
-    float: left;
-    margin: 3px;
-    padding: 3px;
-}
-</style>

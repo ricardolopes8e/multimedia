@@ -290,12 +290,12 @@
 <div class="footer footer-top-shadow">
     <div class="container has-text-centered">
 	<span class="icon">
-	  <i class="fa fa-github"></i>
+	  <i class="fa fa-gamepad"></i>
 	</span>
-        <p>template by <a href="http://github.com/plasticneko">github.com/plasticneko</a></p>
-        <p>this template is proudly open source</p>
+
     </div>
 </div>
+<!-- end of footer -->
 <!-- end of footer -->
 </body>
 </html>

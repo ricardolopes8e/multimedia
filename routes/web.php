@@ -27,3 +27,5 @@ return view('post');
 Route::get('/profile', function () {
     return view('profile');
 });
+
+
