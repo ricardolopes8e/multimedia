@@ -1,15 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="columns">
-        <div class="column is-8 is-offset-2">
-            <h1 class="title">Dashboard</h1>
-            
-            <div class="box">
-                You are logged in!
+    <div class="container" style="padding-top: 200px;">
+
+
+
+        <div class="columns  is-12">
+
+            <div class="column is-three-fifths is-offset-one-fifth">
+                <video class="videos" controls>
+                    <source src="{{ asset('movie.mp4')}}" type="video/mp4">
+                </video>
+
             </div>
+
+
         </div>
+
     </div>
-</div>
 @endsection

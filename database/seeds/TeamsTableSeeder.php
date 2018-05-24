@@ -54,13 +54,7 @@ class TeamsTableSeeder extends Seeder
             'updated_at' => \Carbon\Carbon::now()
         ]);
 
-        DB::table('teams')->insert([
-            'name' => 'GROWUP CS PRO',
-            'organization_id' => '2',
-            'modalidade_id' => '3',
-            'created_at' => \Carbon\Carbon::now(),
-            'updated_at' => \Carbon\Carbon::now()
-        ]);
+
 
     }
 }

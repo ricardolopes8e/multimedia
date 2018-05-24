@@ -171,6 +171,14 @@ $title-font: 'bigNoodleOblique', sans-serif;
 }
 
 
+
+.post {
+  border-radius: 25px;
+  @include my-box-shadow(9px,9px, 12px, #1a1a54);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
 .card {
   border-radius: 25px;
   @include my-box-shadow(9px,9px, 12px, #1a1a54);
@@ -265,6 +273,42 @@ html {
 
 }
 
+.organization {
+  box-shadow: 12px 0 15px -4px  rgba(127, 115, 192, 0.8), -12px 0 8px -4px  rgba(127, 115, 192, 0.8);
 
+  height: 100%;
+  padding-top: 150px;
+  background-size: cover;
+  background-color: rgba(82, 112, 132, 0.8);
+}
+
+.description {
+  text-shadow: 4px 4px 5px #3b5b97;
+  color: rgb(255, 234, 234);
+  font-family: 'Roboto', cursive;
+  font-weight: bold;
+}
+
+.logo-org{
+  -webkit-filter: drop-shadow(30px 30px 25px rgba(136, 141, 134, 0.5));
+
+}
+
+.game-show {
+  height: 5;
+}
+
+.videos {
+  @include my-box-shadow(1px,1px, 300px, #f9821e);
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 12px;
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 12px;
+
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 10px/30px;
+
+}
 
 $navbar-dropdown-item-hover: $black !default

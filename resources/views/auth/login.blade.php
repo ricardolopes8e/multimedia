@@ -2,14 +2,14 @@
 
 @section('content')
 
-    <section class="section">
-        <div class="container">
 
-            <div class="column is-6 is-offset-3">
+        <div class="container" style="padding-top: 140px;">
+
+            <div class="column is-4 is-offset-4">
 
 
-                    <p class="subtitle has-text-grey">Please login to proceed.</p>
-                    <div class="box" style="background-color: #e6ac00;">
+
+                    <div class="box" >
                         <form method="POST" action="{{ route('login') }}">
                               {{ csrf_field() }}
                             <div class="field">
@@ -41,13 +41,12 @@
                                     <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
                                 </label>
                             </div>
-                            <button class="button is-block is-dark  is-3 is-fullwidth">   {{ __('Login') }}  </button>
+                            <button type="submit" name="submit" class="button is-primary">Register</button>
                         </form>
                     </div>
 
             </div>
         </div>
-    </section>
 
 
 

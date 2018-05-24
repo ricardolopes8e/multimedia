@@ -49,3 +49,14 @@ Route::group(['prefix' => 'organizations', 'middleware' => ['web','auth']], func
     Route::get('/delete/{organization}', 'OrganizationController@destroy')->name('organizations.destroy');
 });
 
+
+Route::group(['prefix' => 'posts', 'middleware' => ['web','auth']], function() {
+
+    Route::get('', 'PostsController@index')->name('posts.index');
+    Route::get('/create', 'PostsController@create')->name('posts.create');
+    Route::get('/{post}', 'PostsController@show')->name('posts.show');
+    Route::post('', 'PostsController@store')->name('posts.store');
+    Route::get('/delete/{post}', 'PostsController@destroy')->name('posts.destroy');
+});
+
+

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container" style="padding-top: 40px;">
     <div class="columns">
         <div class="column is-4 is-offset-4">
             <h1 class="title">Register</h1>

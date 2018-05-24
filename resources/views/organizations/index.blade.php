@@ -12,7 +12,7 @@
             </div>
             @foreach ($organizations as $key => $organization)
                 <div class="column is-3">
-                    <div class="card has-text-centered ">
+                    <div class="card cardorg has-text-centered ">
 
                         <div class="card-content">
                             <figure class="image is-square simbol">

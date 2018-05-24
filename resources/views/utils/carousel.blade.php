@@ -1,5 +1,5 @@
 <section class="section">
-    <div class="container cont-carousel" style="margin: auto; width: 70%; padding-top: 10px; padding-left: 10px; padding-right: 10px; background-color: #F9E8E9">
+    <div class="container cont-carousel" style="margin: auto; height: 55%; width: 60%; padding-top: 10px; padding-left: 10px; padding-right: 10px; background-color: #F9E8E9">
         <div class='carousel carousel-animated carousel-animate-slide' style="width: 100%; height: 100%; margin: auto;">
             <div class='carousel-container' >
                 <div class='carousel-item has-background is-active'>

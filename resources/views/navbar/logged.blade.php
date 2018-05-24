@@ -3,15 +3,9 @@
 
 
     <div class="navbar-dropdown has-text-black	">
-        <a class="navbar-item anav" href="{{ route('organizations.index') }}">Organizations </a>
-        <a class="navbar-item" href="about.html">
-            Players
-        </a>
-        <a class="navbar-item" href="contact.html">
-            Competitions
-        </a>
+        <a class="navbar-item nav" href="{{ route('organizations.index') }}">Organizations </a>
+        <a class="navbar-item nav" href="{{ route('posts.index') }}">Posts </a>
 
-        <a class="navbar-item" href="">Games </a>
         <a class="navbar-item" href="{{ route('logout') }}"
            onclick="event.preventDefault();document.getElementById('logout-form').submit();">
             Logout
