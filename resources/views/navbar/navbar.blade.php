@@ -1,12 +1,10 @@
 <!-- navigation -->
 
 
-<nav class="navbar is-orange">
+<nav class="navbar is-fixed-top is-orange">
     <div class="container">
         <div class="navbar-brand">
-            <a class="nav-item" href="{{ __('/') }}">
-                <h3 class="title title-text is-3" style="color: #000000">E-STUFF</h3>
-            </a>
+          @include('utils.logo')
         </div>
 
         <div class="navbar-menu" id="navMenu">

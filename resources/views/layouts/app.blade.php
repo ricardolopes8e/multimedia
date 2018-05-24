@@ -9,9 +9,9 @@
     @include('navbar.navbar')
 
     <section class="section is-paddingless" >
-        <div class="container">
+
             @yield('content')
-        </div>
+
 
     </section>
 

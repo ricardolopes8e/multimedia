@@ -154,9 +154,7 @@ ul.applied-filters-list {
   right: 5px;
 }
 
-a:hover {
-  background-color: yellow;
-}
+
 
 $title-font: 'bigNoodleOblique', sans-serif;
 
@@ -165,10 +163,11 @@ $title-font: 'bigNoodleOblique', sans-serif;
   font-style: italic;
 }
 
-.card-content  h1 {
+.card-button {
   background-color: #260003;
   color: #EDC9CC;
   @include my-box-shadow(1px,1px, 3px, #F9BEC2);
+  transition: all .2s ease-in-out;
 }
 
 
@@ -178,6 +177,16 @@ $title-font: 'bigNoodleOblique', sans-serif;
   background: rgba(100, 102, 108, 0.8);
 }
 
+.card-button:hover {
+  transform: scale(1.1);
+  color: #cd0930;
+
+}
+
+.grow:hover {
+  transform: scale(1.2);
+
+}
 
 
 
@@ -199,6 +208,62 @@ html {
   height: 75px;
 }
 
+.simbol:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  20% {
+    transform: rotate3d(0, 1, 0, 45deg);
+  }
+
+
+  30% {
+    transform: rotate3d(0, 1, 0, 0);
+  }
+
+  50% {
+    transform: rotate3d(0, 1, 0, -30deg);
+  }
+
+  70% {
+    transform: rotate3d(0, 1, 0, 0);
+  }
+
+  70% {
+    transform: rotate3d(0, 1, 0, 25deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 1, 0, 0);
+  }
+
+  90% {
+    transform: rotate3d(0, 1, 0, -10deg);
+  }
+
+  90% {
+    transform: rotate3d(0, 1, 0, 0);
+  }
+
+}
+
+
+.cont-carousel {
+  @include my-box-shadow(5px,5px, 100px, #f9821e);
+
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-shadow: 4px 4px 20px #FE3D07;
+
+}
 
 
 

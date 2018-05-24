@@ -1,31 +1,31 @@
 <section class="section">
-    <div class="container">
-        <div class='carousel carousel-animated carousel-animate-slide'>
-            <div class='carousel-container'>
+    <div class="container cont-carousel" style="margin: auto; width: 70%; padding-top: 10px; padding-left: 10px; padding-right: 10px; background-color: #F9E8E9">
+        <div class='carousel carousel-animated carousel-animate-slide' style="width: 100%; height: 100%; margin: auto;">
+            <div class='carousel-container' >
                 <div class='carousel-item has-background is-active'>
-                    <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt=""
+                    <img class="is-background" src="{{ asset('img/image1.jpg') }}"  alt=""
                          width="500"
                          height="220"/>
-                    <div class="title">Merry Christmas</div>
+                    <div class="title">Segue as equipas portuguesas no LCS!</div>
                 </div>
                 <div class='carousel-item has-background'>
-                    <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt=""
+                    <img class="is-background" src="{{ asset('img/image2.jpg') }}" alt=""
                          width="500"
                          height="220"/>
-                    <div class="title">Original Gift: Offer a song with <a href="https://lasongbox.com" target="_blank">La
+                    <div class="title">Vê as últimas novidades de League of Legends! <a href="https://lasongbox.com" target="_blank">La
                             Song Box</a></div>
                 </div>
                 <div class='carousel-item has-background'>
-                    <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt=""
+                    <img class="is-background" src="{{ asset('img/image3.jpg') }}" alt=""
                          width="500"
                          height="220"/>
-                    <div class="title">Sushi time</div>
+                    <div class="title">Conhece os jogadores portugueses de Counter Strike!</div>
                 </div>
                 <div class='carousel-item has-background'>
-                    <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt=""
+                    <img class="is-background" src="{{ asset('img/image4.png') }}" alt=""
                          width="500"
                          height="220"/>
-                    <div class="title">Life</div>
+                    <div class="title">Overwatch new Champion!</div>
                 </div>
             </div>
             <div class="carousel-navigation is-centered">

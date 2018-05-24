@@ -1,6 +1,6 @@
 <!-- page header (title, etc) -->
 
-<section class="hero is-dark is-marginless is-paddingless">
+<section class="hero is-dark" style="padding-top: 50px;">
     <div class="hero-body">
         <div class="container">
             <div class="has-text-centered">
@@ -10,10 +10,10 @@
                 <!-- end of header && subheader -->
 
                 <!-- header nav content -->
-                <div class="nav-center">
+                <div class="nav-center face">
                     <a class="nav-item" href="">
 		  <span class="icon">
-		    <i class="fa fa-facebook"></i>
+		    <i class="fa fa-3x fa-facebook grow" style="color: #0f81cc"></i>
 		  </span>
                     </a>
                     <a class="nav-item" href="">
