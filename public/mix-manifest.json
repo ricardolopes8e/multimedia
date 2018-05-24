@@ -1,6 +1,4 @@
 {
-  "/js/bulma.js": "/js/bulma.js",
-  "/css/bulma.css": "/css/bulma.css",
-  "/css/font-awesome.css": "/css/font-awesome.css",
-  "/js/jquery.min.js": "/js/jquery.min.js"
+  "/js/app.js": "/js/app.js",
+  "/css/app.css": "/css/app.css"
 }

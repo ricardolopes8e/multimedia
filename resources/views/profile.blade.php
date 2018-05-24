@@ -3,7 +3,7 @@
 <head>
   <title>Bulma Blog Dark 1</title>
   <!-- stylesheets -->
-  <link href="{{ asset('css/bulma.css') }}" rel="stylesheet">
+  <link href="{{ asset('bulma2.css') }}" rel="stylesheet">
   <link href="{{ asset('css/bulmacustom.css') }}" rel="stylesheet">
   <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

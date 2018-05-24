@@ -11,9 +11,14 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.sass('resources/assets/sass/bulma.sass', 'public/css/bulma.css')
-    .sass('resources/assets/sass/font-awesome.scss', 'public/css/font-awesome.css')
+/*
+mix.sass('resources/assets/sass/bulma.sass', 'public/css/bulma2.css')
+    .sass('resources/assets/sass/font-awesome.sass', 'public/css/font-awesome.css')
     .copy('node_modules/jquery/dist/jquery.js', 'public/js/jquery.js')
     .copy('resources/assets/fonts', 'public/fonts')
     .minify('public/js/jquery.js')
-    .js('resources/assets/js/bulma.js', 'public/js/bulma.js');
+    .js('resources/assets/js/app.js', 'public/js/bulma.js' );*/
+
+mix.sass('resources/assets/css/app.scss', 'public/css')
+    .js('resources/assets/js/app.js', 'public/js');
+

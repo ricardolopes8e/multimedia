@@ -1,0 +1,205 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+// Import Bulma and Buefy styles
+@import '~bulma';
+@import "~bulma-carousel";
+
+//@import "initial-variables.sass"
+@import "font-awesome.sass";
+//@import "./bulma2.css";
+@import "mixins";
+
+
+
+
+
+$primary: #167df0;
+$success: #06b643;
+$primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+$orange: #69969C;
+$orange-invert: findColorInvert($orange);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+        "white": ($white, $black),
+        "black": ($black, $white),
+        "light": ($light, $light-invert),
+        "dark": ($dark, $dark-invert),
+        "primary": ($primary, $primary-invert),
+        "info": ($info, $info-invert),
+        "success": ($success, $success-invert),
+        "warning": ($warning, $warning-invert),
+        "danger": ($danger, $danger-invert),
+        "twitter": ($orange, $twitter-invert),
+        "orange": ($orange,$orange-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+
+
+
+//fonts
+
+@font-face {
+  font-family: 'bigNoodle';
+  src: url("../fonts/big_noodle_titling.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'bigNoodleOblique';
+  src: url("../fonts/big_noodle_titling_oblique.ttf") format("truetype");
+}
+
+
+
+[v-cloak] {
+  display: none;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  background: none;
+  &:before {
+    content: '';
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, transparent, #000, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    // this is really the only tricky part, you need to specify the background color of the container element...
+    color: black;
+    background-color: white;
+  }
+}
+
+.table.is-responsive {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.machines-table-container {
+  width: 100%;
+  overflow-x: auto;
+  font-size: 11px;
+}
+
+.machines-readings-section {
+  padding: 3rem 0.2rem;
+}
+
+.b-table .table th .th-wrap .icon {
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+article.notification {
+  max-width: 25%;
+  float: right;
+}
+
+span.icon {
+  line-height: 1rem;
+  vertical-align: middle;
+}
+
+label {
+  &.checkbox.checkbox-location-name {
+    padding-right: 0;
+
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.columns {
+  .column {
+    .card:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+ul.applied-filters-list {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.notification {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+$title-font: 'bigNoodleOblique', sans-serif;
+
+.title-text{
+  font-family: $title-font;
+  font-style: italic;
+}
+
+.card-content  h1 {
+  background-color: #260003;
+  color: #EDC9CC;
+  @include my-box-shadow(1px,1px, 3px, #F9BEC2);
+}
+
+
+.card {
+  border-radius: 25px;
+  @include my-box-shadow(9px,9px, 12px, #1a1a54);
+  background: rgba(100, 102, 108, 0.8);
+}
+
+
+
+
+
+html {
+  background: url(img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.main-content {
+  background-color: #0f81cc;
+}
+
+.navbar {
+  height: 75px;
+}
+
+
+
+
+$navbar-dropdown-item-hover: $black !default
